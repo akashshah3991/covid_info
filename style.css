@@ -1,0 +1,267 @@
+/* :root{
+ --body-color-dark:#121212;
+ --body-color-light:#dfdddd;
+ --card-color-dark:#1D1D1D;
+ --card-color-light:#dfdddd;
+ --txt-white:#ffffff;
+ --txt-black:#333333;
+ --boder-color:#B46F4E;
+} */
+:root {
+    --body-color-dark: #0A192F;
+    --body-color-light: #ffffff;
+    --card-color-dark: #172A46;
+    --card-color-light: #dfdddd;
+    --txt-white: #ffffff;
+    --txt-black: #333333;
+    --boder-color: #2f7776;
+    --head-color: #55debd;
+    --text-color: #bdc7e6;
+    --text-color-light: #a7b1d0;
+    --light-card:#f0f3fa;
+}
+
+
+.txt-dark{
+   color:var(--text-color);
+}
+.wrapper{
+    padding: 10px;
+}
+.states{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.statesinfo{
+    width: 15%;
+    /* background: var(--card-color-dark); */
+    height: auto;
+    padding: 10px;
+    
+    border: 1px solid var(--boder-color);
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 220px;
+}
+
+.cen{
+ text-align: center;
+}
+
+body{
+
+ font-family: 'Farro', sans-serif;
+ margin: 0;
+}
+
+.darkbody{
+    background-color: var(--body-color-dark);
+}
+
+.lightbody{
+    background-color: var(--body-color-light);
+}
+
+.lightcard{
+    background: var(--light-card);
+}
+
+.darkcard{
+    background: var(--card-color-dark);
+}
+
+h3{
+ padding-bottom: 5px;
+ border-bottom: 1px solid var(--boder-color);
+ /* color:var(--head-color); */
+}
+
+.country{
+ /* background: var(--card-color-dark); */
+ max-width: 60%;
+ margin: 20px;
+ padding: 10px;
+ border: 1px solid var(--boder-color);
+ color: var(--text-color);
+ max-width: 600px;
+ border-radius: 10px;
+ order: 2;
+}
+.country a,.notifications a{
+    color: var(--text-color);
+}
+.smtxt{
+ font-size: 12px;
+}
+
+.txtwhite{
+ color: var(--txt-white);
+}
+
+.txtblack{
+    color: var(--txt-black);
+}
+
+hr{
+ max-width: 560px;
+ border:none;
+ height: 1px;
+ background-color: var(--boder-color);
+}
+
+.notifications{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
+
+.notifications p{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.testdata{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap;   
+}
+
+.cases{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;  
+    margin: 0px 20px;
+}
+
+.p-t{
+    padding-top: 40px;
+}
+
+h2{
+    color: var(--text-color);
+}
+
+.cr{
+    color:var(--text-color-light);
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--boder-color);
+    background: var(--card-color-dark);
+    position: sticky;
+    top:0;
+}
+
+nav p{
+    color: var(--text-color);
+}
+
+.ban{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
+
+.ban img{
+    border-radius: 10px;
+    order: 1;
+    max-width: 100%;
+}
+
+.navimg{
+    margin: 0 20px;
+    position: absolute;
+    left: 0;
+}
+
+.navinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switchbox{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+}
+
+.dark .slider {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.light .slider {
+    background: #3ca8c6;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background: var(--head-color);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 26px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.dark .slider.round:before {
+    background: var(--card-color-dark);
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #3a3959;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
