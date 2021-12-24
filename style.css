@@ -161,12 +161,13 @@ nav{
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--boder-color);
     background: var(--card-color-dark);
     position: sticky;
     top:0;
+    z-index: 1;
 }
 
 nav p{
@@ -188,11 +189,29 @@ nav p{
 }
 
 .navimg{
-    margin: 0 20px;
-    position: absolute;
-    left: 0;
+    margin: 0 8px;
+    
 }
-
+@media all and (max-width:576px){
+    .navimg{
+        width: 70px;
+        height: auto;
+    }
+    .switchbox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navinfo{
+        flex-direction: column;
+    }
+    .switchbox p{
+        font-size: 12px;
+    }
+    nav{
+        padding: 2px 0;
+    }
+}
 .navinfo{
     display: flex;
     justify-content: center;
@@ -202,8 +221,7 @@ nav p{
 .switchbox{
     display: flex;
     align-items: center;
-    position: absolute;
-    right: 10px;
+    margin: 0 8px;
 }
 
 .dark .slider {
